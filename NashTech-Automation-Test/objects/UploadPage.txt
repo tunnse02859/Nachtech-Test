@@ -1,0 +1,6 @@
+upload=xpath=//input[@id='uploadname1']
+uploadTo=xpath=//select[@name='subdir1']
+folder=xpath=//input[@id='newsubdir1']
+email=xpath=//input[@id='formfield-email_address']
+name=xpath=//input[@id='formfield-first_name']
+submit=xpath=//input[@id='uploadbutton']
