@@ -25,7 +25,11 @@ public class MobileTestBaseSetup1 {
 
 	@BeforeSuite
 	public void beforeSuie() throws IOException {
-		FilePaths.initReportFolder2();
+		try {
+			FilePaths.initReportFolder2();
+		}catch(NoSuchFileException e) {
+			e.printStackTrace();
+		}
 		drivers = new HashMap<String, AppiumBaseDriver>();
 	}
 	
