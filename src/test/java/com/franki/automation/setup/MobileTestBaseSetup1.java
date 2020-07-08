@@ -36,12 +36,16 @@ public class MobileTestBaseSetup1 {
 	
 	@BeforeTest
 	public void beforeTest(String deviceName, String platformName, String platformVersion) throws Exception {
+		try{
 		System.out.println("beforeTest");
 		/*********** Init Html reporter *************************/
 		FilePaths.initReportFilePath(deviceName,platformName,platformVersion);
 		HtmlReporter.setReporter(FilePaths.getReportFilePath());
 		AppiumBaseDriver driver = new AppiumHandler().startDriver(deviceName,platformName,platformVersion);
 		drivers.put(Thread.currentThread().toString(), driver);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@BeforeClass
