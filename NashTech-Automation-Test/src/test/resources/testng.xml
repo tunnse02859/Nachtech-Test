@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" configfailurepolicy="continue" >
+  <test name="Test">
+  	<parameter name="deviceName" value="Google Pixel 3 GoogleAPI Emulator"></parameter>
+  	<parameter name="platformName" value="Android"></parameter>
+  	<parameter name="platformVersion" value="10.0"></parameter>
+    <classes>
+    	<class name="com.franki.automation.android.tests.demo.LoginTests_1"/>
+      <!-- 	<class name="com.franki.automation.android.tests.demo.LoginTests_2"/> -->
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test 2 ">
+  	<parameter name="deviceName" value="Google Pixel 3a GoogleAPI Emulator"></parameter>
+  	<parameter name="platformName" value="Android"></parameter>
+  	<parameter name="platformVersion" value="10.0"></parameter>
+    <classes>
+    	<class name="com.franki.automation.android.tests.demo.LoginTests_1"/>
+      <!-- 	<class name="com.franki.automation.android.tests.demo.LoginTests_2"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,3 +1,0 @@
-- Download chromedriver and geckodriver (make sure it's support current chrome and firefox browser on your pc)
-- Place it in folder: driver
-- run test from: testng.xml

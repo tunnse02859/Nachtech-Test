@@ -1,3 +1,0 @@
-uploadSuccess=xpath=//dl[@id='fcuploadsummary']//dt[text()='Your upload is complete:']
-email=xpath=//dl[@id='fcuploadsummary']//dd[contains(text(),'Email Address:')]
-fileName=xpath=//dl[@id='fcuploadsummary']//dt/a
