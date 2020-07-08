@@ -20,7 +20,12 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     goals: 'test'
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)/Reports'
+    contents: '**'
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
-    pathToPublish: '/Reports'
+    pathToPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: html-report
